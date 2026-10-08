@@ -1,0 +1,215 @@
+/* =========================
+   CONFIGURAÇÃO DA PÁGINA
+   ========================= */
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+
+/* =========================
+   FORMULÁRIO
+   ========================= */
+
+form {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================
+   FIELDSET
+   ========================= */
+
+fieldset {
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* Título dos fieldsets */
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #222;
+}
+
+
+/* =========================
+   DADOS PESSOAIS
+   ========================= */
+
+/* Label fica em cima do campo */
+
+fieldset:first-child label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+
+/* Campos */
+
+fieldset:first-child input[type="text"],
+fieldset:first-child input[type="password"],
+fieldset:first-child input[type="email"],
+fieldset:first-child input[type="number"],
+fieldset:first-child input[type="date"] {
+    display: block;
+
+    width: 100%;
+    height: 40px;
+
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #bbb;
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+/* Campo quando selecionado */
+
+fieldset:first-child input:focus {
+    border-color: #6a0dad;
+    box-shadow: 0 0 4px rgba(106, 13, 173, 0.25);
+}
+
+
+/* =========================
+   RADIO BUTTONS
+   ========================= */
+
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"]+label {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   CHECKBOX
+   ========================= */
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   SELECT
+   ========================= */
+
+select {
+    padding: 9px;
+
+    border: 1px solid #bbb;
+    border-radius: 6px;
+
+    background-color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   TEXTAREA
+   ========================= */
+
+textarea {
+    display: block;
+
+    width: 400px;
+    height: 120px;
+
+    padding: 10px;
+
+    margin-top: 8px;
+
+    border: 1px solid #bbb;
+    border-radius: 6px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    resize: vertical;
+
+    box-sizing: border-box;
+
+    outline: none;
+}
+
+
+/* Textarea selecionado */
+
+textarea:focus {
+    border-color: #6a0dad;
+    box-shadow: 0 0 4px rgba(106, 13, 173, 0.25);
+}
+
+
+/* =========================
+   BOTÕES
+   ========================= */
+
+button {
+    padding: 10px 20px;
+
+    margin-right: 8px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #6a0dad;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+/* Botão cadastrar */
+
+button[type="submit"]:hover {
+    background-color: #520b85;
+}
+
+
+/* Botão limpar */
+
+button[type="reset"] {
+    background-color: #777;
+}
+
+button[type="reset"]:hover {
+    background-color: #555;
+}
